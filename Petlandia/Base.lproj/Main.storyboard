@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="uA9-uf-hDT">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="Pfa-fN-gOo">
+            <objects>
+                <navigationController id="uA9-uf-hDT" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="JRj-MZ-Xiw">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="AGI-lc-rzE"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="P6Q-vn-o76" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-606" y="139"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Petlandia" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="OLs-Mw-e1P">
+                                <rect key="frame" x="87" y="114" width="248.5" height="152.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ig7-tl-UjL">
+                                <rect key="frame" x="34" y="415" width="108" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.73553824570000004" blue="0.71358842879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="¡Conocelas!">
+                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Conoces las veterinarias y los servicios que ofrece?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CEm-a1-2B8">
+                                <rect key="frame" x="18" y="307" width="141" height="72"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x3K-Ia-LnT">
+                                <rect key="frame" x="187" y="307" width="207" height="152"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-2f-0MX">
+                                <rect key="frame" x="20" y="542" width="207" height="161.5"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HPm-mz-bKV">
+                                <rect key="frame" x="276" y="640" width="94" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.73553824570000004" blue="0.71358842879999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="¡Adopta!">
+                                    <color key="titleColor" red="0.58072251080000004" green="0.066734083" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="¿Te interesa adoptar una mascota?" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="5" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SY1-je-dMo">
+                                <rect key="frame" x="261" y="537" width="131" height="61"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="x3K-Ia-LnT" firstAttribute="leading" secondItem="ig7-tl-UjL" secondAttribute="trailing" constant="45" id="2Wk-CJ-MPf"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HPm-mz-bKV" secondAttribute="trailing" constant="44" id="54g-Il-IlM"/>
+                            <constraint firstItem="x3K-Ia-LnT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="7NF-ry-Y6x"/>
+                            <constraint firstItem="SY1-je-dMo" firstAttribute="leading" secondItem="0jb-2f-0MX" secondAttribute="trailing" constant="34" id="EXm-q7-gaj"/>
+                            <constraint firstItem="0jb-2f-0MX" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="Ful-Tu-8VH"/>
+                            <constraint firstItem="HPm-mz-bKV" firstAttribute="top" secondItem="SY1-je-dMo" secondAttribute="bottom" constant="42" id="FzA-GP-aCE"/>
+                            <constraint firstItem="x3K-Ia-LnT" firstAttribute="top" secondItem="OLs-Mw-e1P" secondAttribute="bottom" constant="40.5" id="GJE-h4-zMB"/>
+                            <constraint firstItem="0jb-2f-0MX" firstAttribute="top" secondItem="x3K-Ia-LnT" secondAttribute="bottom" constant="83" id="QEW-vu-6aS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SY1-je-dMo" secondAttribute="trailing" constant="22" id="QVO-eE-eF3"/>
+                            <constraint firstItem="HPm-mz-bKV" firstAttribute="leading" secondItem="0jb-2f-0MX" secondAttribute="trailing" constant="49" id="Rjf-ci-XBv"/>
+                            <constraint firstItem="0jb-2f-0MX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="cI1-ea-BOk"/>
+                            <constraint firstItem="0jb-2f-0MX" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.18" id="dF5-qv-4m0"/>
+                            <constraint firstItem="CEm-a1-2B8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="18" id="ded-mC-sbs"/>
+                            <constraint firstItem="OLs-Mw-e1P" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.17" id="diS-Pj-jYW"/>
+                            <constraint firstItem="SY1-je-dMo" firstAttribute="top" secondItem="x3K-Ia-LnT" secondAttribute="bottom" constant="78" id="iNK-xj-4OK"/>
+                            <constraint firstItem="OLs-Mw-e1P" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="26" id="jiH-f2-QwJ"/>
+                            <constraint firstItem="x3K-Ia-LnT" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.17" id="jr5-2U-KXO"/>
+                            <constraint firstItem="OLs-Mw-e1P" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="jxm-DW-69x"/>
+                            <constraint firstItem="ig7-tl-UjL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="34" id="olI-IC-wKC"/>
+                            <constraint firstItem="x3K-Ia-LnT" firstAttribute="leading" secondItem="CEm-a1-2B8" secondAttribute="trailing" constant="28" id="sxL-yR-mJO"/>
+                            <constraint firstItem="CEm-a1-2B8" firstAttribute="top" secondItem="OLs-Mw-e1P" secondAttribute="bottom" constant="40.5" id="vcH-4W-b6L"/>
+                            <constraint firstItem="ig7-tl-UjL" firstAttribute="top" secondItem="CEm-a1-2B8" secondAttribute="bottom" constant="36" id="xMz-oH-zVi"/>
+                            <constraint firstItem="OLs-Mw-e1P" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.6" id="ybU-as-G6c"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="x3K-Ia-LnT" secondAttribute="trailing" constant="20" id="ycc-W8-NYc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="DaG-5H-Zex"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="131.8840579710145" y="138.61607142857142"/>
+        </scene>
+    </scenes>
+</document>

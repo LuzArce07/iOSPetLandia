@@ -1,0 +1,891 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3D9A7EB5237A0D7000EF2F58 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7EB4237A0D7000EF2F58 /* AppDelegate.swift */; };
+		3D9A7EB7237A0D7000EF2F58 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7EB6237A0D7000EF2F58 /* ViewController.swift */; };
+		3D9A7EBA237A0D7000EF2F58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A7EB8237A0D7000EF2F58 /* Main.storyboard */; };
+		3D9A7EBC237A0D7100EF2F58 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A7EBB237A0D7100EF2F58 /* Assets.xcassets */; };
+		3D9A7EBF237A0D7100EF2F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A7EBD237A0D7100EF2F58 /* LaunchScreen.storyboard */; };
+		3D9A7ECA237A0D7100EF2F58 /* PetlandiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7EC9237A0D7100EF2F58 /* PetlandiaTests.swift */; };
+		3D9A7ED5237A0D7100EF2F58 /* PetlandiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7ED4237A0D7100EF2F58 /* PetlandiaUITests.swift */; };
+		3D9A7F2E237A11E900EF2F58 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9A7F21237A11C300EF2F58 /* Alamofire.framework */; };
+		3D9A7F2F237A11E900EF2F58 /* Alamofire.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9A7F21237A11C300EF2F58 /* Alamofire.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		3D9A7F33237A11ED00EF2F58 /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9A7EEF237A118900EF2F58 /* AlamofireImage.framework */; };
+		3D9A7F34237A11ED00EF2F58 /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3D9A7EEF237A118900EF2F58 /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		3D9A7EC6237A0D7100EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EA9237A0D7000EF2F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9A7EB0237A0D7000EF2F58;
+			remoteInfo = Petlandia;
+		};
+		3D9A7ED1237A0D7100EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EA9237A0D7000EF2F58 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3D9A7EB0237A0D7000EF2F58;
+			remoteInfo = Petlandia;
+		};
+		3D9A7EEE237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C9043771AABBFC5001B4E60;
+			remoteInfo = "AlamofireImage iOS";
+		};
+		3D9A7EF0237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C9043821AABBFC5001B4E60;
+			remoteInfo = "AlamofireImage iOS Tests";
+		};
+		3D9A7EF2237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CE611321AABC24E00D35044;
+			remoteInfo = "AlamofireImage macOS";
+		};
+		3D9A7EF4237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CE611471AABC5C900D35044;
+			remoteInfo = "AlamofireImage macOS Tests";
+		};
+		3D9A7EF6237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C16B37D1BA9399500A66EF0;
+			remoteInfo = "AlamofireImage tvOS";
+		};
+		3D9A7EF8237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C16B3861BA9399500A66EF0;
+			remoteInfo = "AlamofireImage tvOS Tests";
+		};
+		3D9A7EFA237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C4D4EC11B92976900C96855;
+			remoteInfo = "AlamofireImage watchOS";
+		};
+		3D9A7EFC237A118900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4C11830B2150517E007A8298;
+			remoteInfo = "iOS Example";
+		};
+		3D9A7F20237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3319A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3D9A7F22237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F8111E3E19A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS Tests";
+		};
+		3D9A7F24237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4DD67C0B1A5C55C900ED2280;
+			remoteInfo = "Alamofire macOS";
+		};
+		3D9A7F26237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = F829C6B21A7A94F100A2CD59;
+			remoteInfo = "Alamofire macOS Tests";
+		};
+		3D9A7F28237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626EF1BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS";
+		};
+		3D9A7F2A237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 4CF626F81BA7CB3E0011A099;
+			remoteInfo = "Alamofire tvOS Tests";
+		};
+		3D9A7F2C237A11C300EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = E4202FE01B667AA100C997FB;
+			remoteInfo = "Alamofire watchOS";
+		};
+		3D9A7F30237A11E900EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = F8111E3219A95C8B0040E7D1;
+			remoteInfo = "Alamofire iOS";
+		};
+		3D9A7F35237A11ED00EF2F58 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = 4C9043761AABBFC5001B4E60;
+			remoteInfo = "AlamofireImage iOS";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3D9A7F32237A11E900EF2F58 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				3D9A7F2F237A11E900EF2F58 /* Alamofire.framework in Embed Frameworks */,
+				3D9A7F34237A11ED00EF2F58 /* AlamofireImage.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		3D9A7EB1237A0D7000EF2F58 /* Petlandia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Petlandia.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9A7EB4237A0D7000EF2F58 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3D9A7EB6237A0D7000EF2F58 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		3D9A7EB9237A0D7000EF2F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3D9A7EBB237A0D7100EF2F58 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3D9A7EBE237A0D7100EF2F58 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3D9A7EC0237A0D7100EF2F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9A7EC5237A0D7100EF2F58 /* PetlandiaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetlandiaTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9A7EC9237A0D7100EF2F58 /* PetlandiaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetlandiaTests.swift; sourceTree = "<group>"; };
+		3D9A7ECB237A0D7100EF2F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9A7ED0237A0D7100EF2F58 /* PetlandiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetlandiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3D9A7ED4237A0D7100EF2F58 /* PetlandiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetlandiaUITests.swift; sourceTree = "<group>"; };
+		3D9A7ED6237A0D7100EF2F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = "../../Downloads/AlamofireImage-master 2/AlamofireImage.xcodeproj"; sourceTree = "<group>"; };
+		3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../../Downloads/Alamofire-master 4/Alamofire.xcodeproj"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3D9A7EAE237A0D7000EF2F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9A7F2E237A11E900EF2F58 /* Alamofire.framework in Frameworks */,
+				3D9A7F33237A11ED00EF2F58 /* AlamofireImage.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7EC2237A0D7100EF2F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7ECD237A0D7100EF2F58 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3D9A7EA8237A0D7000EF2F58 = {
+			isa = PBXGroup;
+			children = (
+				3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */,
+				3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */,
+				3D9A7EB3237A0D7000EF2F58 /* Petlandia */,
+				3D9A7EC8237A0D7100EF2F58 /* PetlandiaTests */,
+				3D9A7ED3237A0D7100EF2F58 /* PetlandiaUITests */,
+				3D9A7EB2237A0D7000EF2F58 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3D9A7EB2237A0D7000EF2F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7EB1237A0D7000EF2F58 /* Petlandia.app */,
+				3D9A7EC5237A0D7100EF2F58 /* PetlandiaTests.xctest */,
+				3D9A7ED0237A0D7100EF2F58 /* PetlandiaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9A7EB3237A0D7000EF2F58 /* Petlandia */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7EB4237A0D7000EF2F58 /* AppDelegate.swift */,
+				3D9A7EB6237A0D7000EF2F58 /* ViewController.swift */,
+				3D9A7EB8237A0D7000EF2F58 /* Main.storyboard */,
+				3D9A7EBB237A0D7100EF2F58 /* Assets.xcassets */,
+				3D9A7EBD237A0D7100EF2F58 /* LaunchScreen.storyboard */,
+				3D9A7EC0237A0D7100EF2F58 /* Info.plist */,
+			);
+			path = Petlandia;
+			sourceTree = "<group>";
+		};
+		3D9A7EC8237A0D7100EF2F58 /* PetlandiaTests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7EC9237A0D7100EF2F58 /* PetlandiaTests.swift */,
+				3D9A7ECB237A0D7100EF2F58 /* Info.plist */,
+			);
+			path = PetlandiaTests;
+			sourceTree = "<group>";
+		};
+		3D9A7ED3237A0D7100EF2F58 /* PetlandiaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7ED4237A0D7100EF2F58 /* PetlandiaUITests.swift */,
+				3D9A7ED6237A0D7100EF2F58 /* Info.plist */,
+			);
+			path = PetlandiaUITests;
+			sourceTree = "<group>";
+		};
+		3D9A7EE3237A118900EF2F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7EEF237A118900EF2F58 /* AlamofireImage.framework */,
+				3D9A7EF1237A118900EF2F58 /* AlamofireImage iOS Tests.xctest */,
+				3D9A7EF3237A118900EF2F58 /* AlamofireImage.framework */,
+				3D9A7EF5237A118900EF2F58 /* AlamofireImage macOS Tests.xctest */,
+				3D9A7EF7237A118900EF2F58 /* AlamofireImage.framework */,
+				3D9A7EF9237A118900EF2F58 /* AlamofireImage tvOS Tests.xctest */,
+				3D9A7EFB237A118900EF2F58 /* AlamofireImage.framework */,
+				3D9A7EFD237A118900EF2F58 /* iOS Example.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3D9A7F17237A11C200EF2F58 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3D9A7F21237A11C300EF2F58 /* Alamofire.framework */,
+				3D9A7F23237A11C300EF2F58 /* Alamofire iOS Tests.xctest */,
+				3D9A7F25237A11C300EF2F58 /* Alamofire.framework */,
+				3D9A7F27237A11C300EF2F58 /* Alamofire macOS Tests.xctest */,
+				3D9A7F29237A11C300EF2F58 /* Alamofire.framework */,
+				3D9A7F2B237A11C300EF2F58 /* Alamofire tvOS Tests.xctest */,
+				3D9A7F2D237A11C300EF2F58 /* Alamofire.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3D9A7EB0237A0D7000EF2F58 /* Petlandia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9A7ED9237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "Petlandia" */;
+			buildPhases = (
+				3D9A7EAD237A0D7000EF2F58 /* Sources */,
+				3D9A7EAE237A0D7000EF2F58 /* Frameworks */,
+				3D9A7EAF237A0D7000EF2F58 /* Resources */,
+				3D9A7F32237A11E900EF2F58 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9A7F31237A11E900EF2F58 /* PBXTargetDependency */,
+				3D9A7F36237A11ED00EF2F58 /* PBXTargetDependency */,
+			);
+			name = Petlandia;
+			productName = Petlandia;
+			productReference = 3D9A7EB1237A0D7000EF2F58 /* Petlandia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		3D9A7EC4237A0D7100EF2F58 /* PetlandiaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9A7EDC237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "PetlandiaTests" */;
+			buildPhases = (
+				3D9A7EC1237A0D7100EF2F58 /* Sources */,
+				3D9A7EC2237A0D7100EF2F58 /* Frameworks */,
+				3D9A7EC3237A0D7100EF2F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9A7EC7237A0D7100EF2F58 /* PBXTargetDependency */,
+			);
+			name = PetlandiaTests;
+			productName = PetlandiaTests;
+			productReference = 3D9A7EC5237A0D7100EF2F58 /* PetlandiaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		3D9A7ECF237A0D7100EF2F58 /* PetlandiaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3D9A7EDF237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "PetlandiaUITests" */;
+			buildPhases = (
+				3D9A7ECC237A0D7100EF2F58 /* Sources */,
+				3D9A7ECD237A0D7100EF2F58 /* Frameworks */,
+				3D9A7ECE237A0D7100EF2F58 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3D9A7ED2237A0D7100EF2F58 /* PBXTargetDependency */,
+			);
+			name = PetlandiaUITests;
+			productName = PetlandiaUITests;
+			productReference = 3D9A7ED0237A0D7100EF2F58 /* PetlandiaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3D9A7EA9237A0D7000EF2F58 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1030;
+				LastUpgradeCheck = 1030;
+				ORGANIZATIONNAME = Alumno;
+				TargetAttributes = {
+					3D9A7EB0237A0D7000EF2F58 = {
+						CreatedOnToolsVersion = 10.3;
+					};
+					3D9A7EC4237A0D7100EF2F58 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3D9A7EB0237A0D7000EF2F58;
+					};
+					3D9A7ECF237A0D7100EF2F58 = {
+						CreatedOnToolsVersion = 10.3;
+						TestTargetID = 3D9A7EB0237A0D7000EF2F58;
+					};
+				};
+			};
+			buildConfigurationList = 3D9A7EAC237A0D7000EF2F58 /* Build configuration list for PBXProject "Petlandia" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3D9A7EA8237A0D7000EF2F58;
+			productRefGroup = 3D9A7EB2237A0D7000EF2F58 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 3D9A7F17237A11C200EF2F58 /* Products */;
+					ProjectRef = 3D9A7F16237A11C200EF2F58 /* Alamofire.xcodeproj */;
+				},
+				{
+					ProductGroup = 3D9A7EE3237A118900EF2F58 /* Products */;
+					ProjectRef = 3D9A7EE2237A118900EF2F58 /* AlamofireImage.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				3D9A7EB0237A0D7000EF2F58 /* Petlandia */,
+				3D9A7EC4237A0D7100EF2F58 /* PetlandiaTests */,
+				3D9A7ECF237A0D7100EF2F58 /* PetlandiaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		3D9A7EEF237A118900EF2F58 /* AlamofireImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 3D9A7EEE237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EF1237A118900EF2F58 /* AlamofireImage iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AlamofireImage iOS Tests.xctest";
+			remoteRef = 3D9A7EF0237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EF3237A118900EF2F58 /* AlamofireImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 3D9A7EF2237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EF5237A118900EF2F58 /* AlamofireImage macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AlamofireImage macOS Tests.xctest";
+			remoteRef = 3D9A7EF4237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EF7237A118900EF2F58 /* AlamofireImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 3D9A7EF6237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EF9237A118900EF2F58 /* AlamofireImage tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "AlamofireImage tvOS Tests.xctest";
+			remoteRef = 3D9A7EF8237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EFB237A118900EF2F58 /* AlamofireImage.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AlamofireImage.framework;
+			remoteRef = 3D9A7EFA237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7EFD237A118900EF2F58 /* iOS Example.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = "iOS Example.app";
+			remoteRef = 3D9A7EFC237A118900EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F21237A11C300EF2F58 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D9A7F20237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F23237A11C300EF2F58 /* Alamofire iOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire iOS Tests.xctest";
+			remoteRef = 3D9A7F22237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F25237A11C300EF2F58 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D9A7F24237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F27237A11C300EF2F58 /* Alamofire macOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire macOS Tests.xctest";
+			remoteRef = 3D9A7F26237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F29237A11C300EF2F58 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D9A7F28237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F2B237A11C300EF2F58 /* Alamofire tvOS Tests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = "Alamofire tvOS Tests.xctest";
+			remoteRef = 3D9A7F2A237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		3D9A7F2D237A11C300EF2F58 /* Alamofire.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = Alamofire.framework;
+			remoteRef = 3D9A7F2C237A11C300EF2F58 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3D9A7EAF237A0D7000EF2F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9A7EBF237A0D7100EF2F58 /* LaunchScreen.storyboard in Resources */,
+				3D9A7EBC237A0D7100EF2F58 /* Assets.xcassets in Resources */,
+				3D9A7EBA237A0D7000EF2F58 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7EC3237A0D7100EF2F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7ECE237A0D7100EF2F58 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3D9A7EAD237A0D7000EF2F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9A7EB7237A0D7000EF2F58 /* ViewController.swift in Sources */,
+				3D9A7EB5237A0D7000EF2F58 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7EC1237A0D7100EF2F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9A7ECA237A0D7100EF2F58 /* PetlandiaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3D9A7ECC237A0D7100EF2F58 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3D9A7ED5237A0D7100EF2F58 /* PetlandiaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3D9A7EC7237A0D7100EF2F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9A7EB0237A0D7000EF2F58 /* Petlandia */;
+			targetProxy = 3D9A7EC6237A0D7100EF2F58 /* PBXContainerItemProxy */;
+		};
+		3D9A7ED2237A0D7100EF2F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3D9A7EB0237A0D7000EF2F58 /* Petlandia */;
+			targetProxy = 3D9A7ED1237A0D7100EF2F58 /* PBXContainerItemProxy */;
+		};
+		3D9A7F31237A11E900EF2F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Alamofire iOS";
+			targetProxy = 3D9A7F30237A11E900EF2F58 /* PBXContainerItemProxy */;
+		};
+		3D9A7F36237A11ED00EF2F58 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "AlamofireImage iOS";
+			targetProxy = 3D9A7F35237A11ED00EF2F58 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		3D9A7EB8237A0D7000EF2F58 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9A7EB9237A0D7000EF2F58 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3D9A7EBD237A0D7100EF2F58 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3D9A7EBE237A0D7100EF2F58 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3D9A7ED7237A0D7100EF2F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		3D9A7ED8237A0D7100EF2F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3D9A7EDA237A0D7100EF2F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Petlandia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.Petlandia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3D9A7EDB237A0D7100EF2F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = Petlandia/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.Petlandia;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		3D9A7EDD237A0D7100EF2F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetlandiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.PetlandiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petlandia.app/Petlandia";
+			};
+			name = Debug;
+		};
+		3D9A7EDE237A0D7100EF2F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetlandiaTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.PetlandiaTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Petlandia.app/Petlandia";
+			};
+			name = Release;
+		};
+		3D9A7EE0237A0D7100EF2F58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetlandiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.PetlandiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Petlandia;
+			};
+			name = Debug;
+		};
+		3D9A7EE1237A0D7100EF2F58 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = PetlandiaUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ulsa.PetlandiaUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Petlandia;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3D9A7EAC237A0D7000EF2F58 /* Build configuration list for PBXProject "Petlandia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9A7ED7237A0D7100EF2F58 /* Debug */,
+				3D9A7ED8237A0D7100EF2F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9A7ED9237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "Petlandia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9A7EDA237A0D7100EF2F58 /* Debug */,
+				3D9A7EDB237A0D7100EF2F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9A7EDC237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "PetlandiaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9A7EDD237A0D7100EF2F58 /* Debug */,
+				3D9A7EDE237A0D7100EF2F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3D9A7EDF237A0D7100EF2F58 /* Build configuration list for PBXNativeTarget "PetlandiaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3D9A7EE0237A0D7100EF2F58 /* Debug */,
+				3D9A7EE1237A0D7100EF2F58 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 3D9A7EA9237A0D7000EF2F58 /* Project object */;
+}
