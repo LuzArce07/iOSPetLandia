@@ -22,6 +22,38 @@ class Veterinaria {
         
     }
     
+    init(diccionarioVeterinaria : NSDictionary) {
+        
+        self.urlImagenLocal = ""
+        self.nombreVeterinaria = ""
+        self.horario = ""
+        
+        if let acf = diccionarioVeterinaria.value(forKey: "acf") as? NSDictionary {
+            
+            if let urlImagenLocal = acf.value(forKey: "imagen_del_local") as? String {
+                
+                self.urlImagenLocal = "https://wadopcionveterinaria.azurewebsites.net/\(urlImagenLocal)"
+                
+            }
+            
+            if let nombreVeterinaria = acf.value(forKey: "nombre_de_la_veterinaria") as? String {
+                
+                self.nombreVeterinaria = nombreVeterinaria
+                
+            }
+            
+            if let horario = acf.value(forKey: "horario") as? String {
+                
+                self.horario = horario
+                
+            }
+            
+            
+            
+        }
+        
+    }
+    
     
     
 }

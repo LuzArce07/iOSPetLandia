@@ -275,6 +275,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="syQ-ni-8bD"/>
                     </view>
+                    <connections>
+                        <outlet property="tvVeterinaria" destination="yM0-6L-CNg" id="RYm-8v-VeG"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s2I-2a-TEI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

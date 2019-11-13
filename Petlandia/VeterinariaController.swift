@@ -15,8 +15,47 @@ class VeterinariaController : UIViewController, UITableViewDelegate, UITableView
     
     var veterinarias : [Veterinaria] = []
     
+    @IBOutlet weak var tvVeterinaria: UITableView!
+    
+    var data = [Veterinaria]()
+    var filterData = [Veterinaria]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        AF.request("https://wadopcionveterinaria.azurewebsites.net/wp-json/wp/v2/veterinarias").responseJSON {
+            
+            response in
+            
+            switch (response.result) {
+                
+            case .success(let datos) :
+                
+                if let arregloVeterinarias = datos as? NSArray {
+                    
+                    for veterinaria in arregloVeterinarias {
+                        
+                        if let diccionarioVeterinaria = veterinaria as? NSDictionary {
+                            
+                            let nuevaVeterinaria = Veterinaria(diccionarioVeterinaria: diccionarioVeterinaria)
+                            self.veterinarias.append(nuevaVeterinaria)
+                            
+                        }
+                        
+                    }
+                    
+                    self.tvVeterinaria.reloadData()
+                    
+                }
+                
+            case .failure(_) :
+                
+                print("Algo salió mal")
+                
+            }
+            
+        }
+        
         
     }
     
@@ -33,6 +72,28 @@ class VeterinariaController : UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let celda = tableView.dequeueReusableCell(withIdentifier: "celdaVeterinaria") as? CeldaVeterinariaController
+        
+        celda?.lblNombreVeterinaria.text = veterinarias[indexPath.row].nombreVeterinaria
+        celda?.lblHorario.text = veterinarias[indexPath.row].horario
+        
+        AF.request(veterinarias[indexPath.row].urlImagenLocal).responseImage {
+            
+            response in
+            
+            switch(response.result) {
+                
+            case .success(let data) :
+                
+                celda?.imgLocal.image = data
+                
+            case .failure(_) :
+                
+                print("Algo salió mal")
+                
+            }
+            
+        }
+        
         
         /*
          
@@ -67,7 +128,42 @@ class VeterinariaController : UIViewController, UITableViewDelegate, UITableView
         return 195
     }
     
-    
+    func GET_AlamoVeterinarias() {
+        
+        AF.request("https://wadopcionveterinaria.azurewebsites.net/wp-json/wp/v2/veterinarias").responseJSON {
+            
+            response in
+            
+            switch (response.result) {
+                
+            case .success(let datos) :
+                
+                if let arregloVeterinarias = datos as? NSArray {
+                    
+                    for veterinaria in arregloVeterinarias {
+                        
+                        if let diccionarioVeterinaria = veterinaria as? NSDictionary {
+                            
+                            let nuevaVeterinaria = Veterinaria(diccionarioVeterinaria: diccionarioVeterinaria)
+                            self.veterinarias.append(nuevaVeterinaria)
+                            
+                        }
+                        
+                    }
+                    
+                    self.tvVeterinaria.reloadData()
+                    
+                }
+                
+            case .failure(_) :
+                
+                print("Algo salió mal")
+                
+            }
+            
+        }
+        
+    }
     
     
     
