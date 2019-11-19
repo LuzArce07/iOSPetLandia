@@ -124,6 +124,17 @@ class VeterinariaController : UIViewController, UITableViewDelegate, UITableView
         
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if segue.identifier == "goToDetalleVeterinaria"{
+            
+            let destino = segue.destination as? DetalleVeterinariaController
+            destino?.detallesVeterinarias = veterinarias[tvVeterinaria.indexPathForSelectedRow!.row]
+            
+        }
+        
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 195
     }

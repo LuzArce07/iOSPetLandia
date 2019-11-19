@@ -14,6 +14,8 @@
 		3D9A7EBF237A0D7100EF2F58 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9A7EBD237A0D7100EF2F58 /* LaunchScreen.storyboard */; };
 		3D9A7ECA237A0D7100EF2F58 /* PetlandiaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7EC9237A0D7100EF2F58 /* PetlandiaTests.swift */; };
 		3D9A7ED5237A0D7100EF2F58 /* PetlandiaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9A7ED4237A0D7100EF2F58 /* PetlandiaUITests.swift */; };
+		3DA8D759238487690021599A /* DetalleVeterinariaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8D758238487690021599A /* DetalleVeterinariaController.swift */; };
+		3DA8D76923848AFC0021599A /* CeldaDetalleVeterinariaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DA8D76823848AFC0021599A /* CeldaDetalleVeterinariaController.swift */; };
 		3DF9836C237B5239001C3E0F /* AlamofireImage.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF9835D237B520B001C3E0F /* AlamofireImage.framework */; };
 		3DF9836D237B5239001C3E0F /* AlamofireImage.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF9835D237B520B001C3E0F /* AlamofireImage.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		3DF98370237B523D001C3E0F /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DF98343237B5201001C3E0F /* Alamofire.framework */; };
@@ -188,6 +190,8 @@
 		3D9A7ED0237A0D7100EF2F58 /* PetlandiaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PetlandiaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3D9A7ED4237A0D7100EF2F58 /* PetlandiaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetlandiaUITests.swift; sourceTree = "<group>"; };
 		3D9A7ED6237A0D7100EF2F58 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3DA8D758238487690021599A /* DetalleVeterinariaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleVeterinariaController.swift; sourceTree = "<group>"; };
+		3DA8D76823848AFC0021599A /* CeldaDetalleVeterinariaController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CeldaDetalleVeterinariaController.swift; sourceTree = "<group>"; };
 		3DF98338237B5201001C3E0F /* Alamofire.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Alamofire.xcodeproj; path = "../Alamofire-master/Alamofire.xcodeproj"; sourceTree = "<group>"; };
 		3DF98350237B520B001C3E0F /* AlamofireImage.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AlamofireImage.xcodeproj; path = "../AlamofireImage-master/AlamofireImage.xcodeproj"; sourceTree = "<group>"; };
 		3DF9837B237B560F001C3E0F /* Veterinaria.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Veterinaria.swift; sourceTree = "<group>"; };
@@ -309,6 +313,8 @@
 				3D9A7EB6237A0D7000EF2F58 /* ViewController.swift */,
 				3DF9837D237B5659001C3E0F /* CeldaVeterinariaController.swift */,
 				3DF9837F237B58BE001C3E0F /* VeterinariaController.swift */,
+				3DA8D758238487690021599A /* DetalleVeterinariaController.swift */,
+				3DA8D76823848AFC0021599A /* CeldaDetalleVeterinariaController.swift */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -601,6 +607,8 @@
 			files = (
 				3DF9837E237B5659001C3E0F /* CeldaVeterinariaController.swift in Sources */,
 				3D9A7EB7237A0D7000EF2F58 /* ViewController.swift in Sources */,
+				3DA8D76923848AFC0021599A /* CeldaDetalleVeterinariaController.swift in Sources */,
+				3DA8D759238487690021599A /* DetalleVeterinariaController.swift in Sources */,
 				3DF9837C237B560F001C3E0F /* Veterinaria.swift in Sources */,
 				3DF98380237B58BE001C3E0F /* VeterinariaController.swift in Sources */,
 				3D9A7EB5237A0D7000EF2F58 /* AppDelegate.swift in Sources */,

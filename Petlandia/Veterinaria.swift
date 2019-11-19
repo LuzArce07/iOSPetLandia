@@ -14,11 +14,30 @@ class Veterinaria {
     var horario : String
     var urlImagenLocal : String
     
-    init(nombreVeterinaria : String, horario : String, urlImagenLocal : String) {
+    var direccion : String
+    var veterinario : String
+    var urlFotoVeterinario : String
+    var email : String
+    var telefono : String
+    var ciudad : String
+    var urgencias : String
+    
+    
+    init(nombreVeterinaria : String, horario : String, urlImagenLocal : String, direccion : String, veterinario : String, urlFotoVeterinario : String, email : String, telefono : String, ciudad : String, urgencias : String) {
         
         self.nombreVeterinaria = nombreVeterinaria
         self.horario = horario
         self.urlImagenLocal = urlImagenLocal
+        
+        self.direccion = direccion
+        self.veterinario = veterinario
+        self.urlFotoVeterinario = urlFotoVeterinario
+        self.email = email
+        self.telefono = telefono
+        self.ciudad = ciudad
+        self.urgencias = urgencias
+        
+    
         
     }
     
@@ -27,6 +46,14 @@ class Veterinaria {
         self.urlImagenLocal = ""
         self.nombreVeterinaria = ""
         self.horario = ""
+        self.direccion = ""
+        self.veterinario = ""
+        self.urlFotoVeterinario = ""
+        self.email = ""
+        self.telefono = ""
+        self.ciudad = ""
+        self.urgencias = ""
+        
         
         if let acf = diccionarioVeterinaria.value(forKey: "acf") as? NSDictionary {
             
@@ -48,6 +75,47 @@ class Veterinaria {
                 
             }
             
+            if let direccion = acf.value(forKey: "direccion") as? String {
+                
+                self.direccion = direccion
+                
+            }
+            
+            if let veterinario = acf.value(forKey: "veterinario") as? String {
+                
+                self.veterinario = veterinario
+                
+            }
+            
+            if let urlFotoVeterinario = acf.value(forKey: "foto_veterinario") as? String {
+                
+                self.urlFotoVeterinario = "https://wadopcionveterinaria.azurewebsites.net/\(urlFotoVeterinario)"
+                
+            }
+            
+            if let email = acf.value(forKey: "email") as? String {
+                
+                self.email = email
+                
+            }
+            
+            if let telefono = acf.value(forKey: "telefono") as? String {
+                
+                self.telefono = telefono
+                
+            }
+            
+            if let ciudad = acf.value(forKey: "ciudad") as? String {
+                
+                self.ciudad = ciudad
+                
+            }
+            
+            if let urgencias = acf.value(forKey: "urgencias") as? String {
+                
+                self.urgencias = urgencias
+                
+            }
             
             
         }
