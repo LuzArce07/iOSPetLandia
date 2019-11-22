@@ -2,7 +2,7 @@
 //  CeldaDetalleVeterinariaController.swift
 //  Petlandia
 //
-//  Created by Alumno on 11/19/19.
+//  Created by Luz Arce on 11/19/19.
 //  Copyright © 2019 Alumno. All rights reserved.
 //
 
@@ -10,7 +10,6 @@ import Foundation
 import UIKit
 
 class CeldaDetalleVeterinariaController: UITableViewCell {
-    
     
     @IBOutlet weak var lblNombreVeterinaria: UILabel!
     @IBOutlet weak var lblHorario: UILabel!
@@ -23,6 +22,5 @@ class CeldaDetalleVeterinariaController: UITableViewCell {
     @IBOutlet weak var lblUrgencias: UILabel!
     @IBOutlet weak var imgLocal: UIImageView!
     @IBOutlet weak var imgVeterinario: UIImageView!
-    
     
 }

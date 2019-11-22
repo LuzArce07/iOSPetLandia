@@ -2,7 +2,7 @@
 //  Veterinaria.swift
 //  Petlandia
 //
-//  Created by Alumno on 11/12/19.
+//  Created by Luz Arce on 11/12/19.
 //  Copyright © 2019 Alumno. All rights reserved.
 //
 

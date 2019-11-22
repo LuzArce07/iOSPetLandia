@@ -19,22 +19,22 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Petlandia 2.0_Mesa de trabajo 1" translatesAutoresizingMaskIntoConstraints="NO" id="lQV-3z-44W">
-                                <rect key="frame" x="87" y="357" width="240" height="128"/>
+                                <rect key="frame" x="2" y="323" width="411" height="252.00000000000011"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lQV-3z-44W" secondAttribute="bottom" constant="377" id="GUw-5Z-QYd"/>
-                            <constraint firstItem="lQV-3z-44W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="87" id="HHK-h9-XdJ"/>
-                            <constraint firstItem="lQV-3z-44W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="313" id="MKV-7l-VLo"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lQV-3z-44W" secondAttribute="trailing" constant="87" id="wOy-di-uMK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="lQV-3z-44W" secondAttribute="trailing" constant="1" id="PSZ-oF-BEZ"/>
+                            <constraint firstItem="lQV-3z-44W" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="279" id="Seh-GQ-I2Y"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="lQV-3z-44W" secondAttribute="bottom" constant="287" id="TPl-oF-KRn"/>
+                            <constraint firstItem="lQV-3z-44W" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="2" id="cCb-oN-Yxc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="53" y="375"/>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
         </scene>
     </scenes>
     <resources>

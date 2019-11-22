@@ -2,7 +2,7 @@
 //  DetalleVeterinariaController.swift
 //  Petlandia
 //
-//  Created by Alumno on 11/19/19.
+//  Created by Luz Arce on 11/19/19.
 //  Copyright © 2019 Alumno. All rights reserved.
 //
 
@@ -60,8 +60,7 @@ class DetalleVeterinariaController: UIViewController, UITableViewDataSource, UIT
         celda?.lblHorario.text = detallesVeterinarias!.horario
         celda?.lblDireccion.text = detallesVeterinarias!.direccion
         celda?.lblNombreVeterinario.text = detallesVeterinarias!.veterinario
-        
-        AF.request(detallesVeterinarias!.urlFotoVeterinario).responseImage {
+         AF.request(detallesVeterinarias!.urlFotoVeterinario).responseImage {
             
             response in
             
@@ -90,6 +89,6 @@ class DetalleVeterinariaController: UIViewController, UITableViewDataSource, UIT
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 519
+        return 785
     }
 }

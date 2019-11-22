@@ -2,8 +2,8 @@
 //  CeldaVeterinariaController.swift
 //  Petlandia
 //
-//  Created by Alumno on 11/12/19.
-//  Copyright © 2019 Alumno. All rights reserved.
+//  Created by Luz Arce on 11/12/19.
+//  Copyright © 2019 Luz Arce. All rights reserved.
 //
 
 import Foundation
